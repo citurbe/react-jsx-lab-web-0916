@@ -6,10 +6,7 @@ const Webpage = require('./components/Webpage');
 
 ReactDOM.render(
   (
-    <div>
-      <RegistrationForm />
-      <Webpage />
-    </div>
+    React.createElement('div', {}, [RegistrationForm, Webpage])
   ),
   document.getElementById('main')
 );
